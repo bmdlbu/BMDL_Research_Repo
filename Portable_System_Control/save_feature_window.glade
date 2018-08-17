@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="save_window">
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">800</property>
+    <property name="default_height">480</property>
+    <property name="gravity">center</property>
+    <signal name="destroy" handler="on_save_window_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="width_request">800</property>
+        <property name="height_request">480</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="save_to_instructions_button">
+            <property name="label" translatable="yes">Back to Instructions 
+             Menu
+</property>
+            <property name="width_request">178</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="xalign">0.55000001192092896</property>
+            <signal name="clicked" handler="on_save_to_instructions_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">622</property>
+            <property name="y">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="save_title">
+            <property name="width_request">250</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">How to operate the Save feature:
+</property>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="save_step_2">
+            <property name="width_request">350</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">2) When you are ready to begin saving, press the
+     "Begin Saving" button to start saving the images
+     continuously.</property>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="save_step_1">
+            <property name="width_request">350</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="yalign">0.49000000953674316</property>
+            <property name="label" translatable="yes">1) Go to the sensing mode. (located at the bottom)
+</property>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="save_step_3">
+            <property name="width_request">363</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">3) When you'd like to stop saving the images, press 
+    stop saving
+</property>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="save_to_sensing_button">
+            <property name="label" translatable="yes">Sensing Mode</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_save_to_sensing_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
