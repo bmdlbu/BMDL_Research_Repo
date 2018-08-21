@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="collimation_window">
+    <property name="width_request">800</property>
+    <property name="height_request">480</property>
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="gravity">center</property>
+    <signal name="destroy" handler="on_collimation_window_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="collimation_to_start_button">
+            <property name="label" translatable="yes">Back to Start 
+      Menu</property>
+            <property name="width_request">129</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="xalign">0.20999999344348907</property>
+            <signal name="clicked" handler="on_collimation_to_start_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">671</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="test_collimation_button">
+            <property name="label" translatable="yes">Begin Testing</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="toggled" handler="on_test_collimation_button_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">320</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="collimation_title">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Test Collimation</property>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="collimation_messaage">
+            <property name="width_request">350</property>
+            <property name="height_request">111</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0.40999999642372131</property>
+            <property name="label" translatable="yes">Remove top lid and place the testing paper in 
+			front of the lasers' path.</property>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

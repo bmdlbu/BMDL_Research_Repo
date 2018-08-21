@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="sensing_window">
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">798</property>
+    <property name="default_height">480</property>
+    <property name="gravity">center</property>
+    <signal name="destroy" handler="on_sensing_window_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="width_request">800</property>
+        <property name="height_request">400</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkImage" id="sensing_image">
+            <property name="width_request">480</property>
+            <property name="height_request">320</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">8</property>
+            <property name="y">45</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_title">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Sensing Mode</property>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_diode_text">
+            <property name="width_request">91</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Active Diode:</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_diode_nm">
+            <property name="width_request">40</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">nm</property>
+          </object>
+          <packing>
+            <property name="x">181</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_rate_hz">
+            <property name="width_request">40</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Hz</property>
+          </object>
+          <packing>
+            <property name="x">476</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_diode_number">
+            <property name="width_request">40</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">#</property>
+          </object>
+          <packing>
+            <property name="x">145</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_rate_text">
+            <property name="width_request">141</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Image Display Rate:</property>
+          </object>
+          <packing>
+            <property name="x">305</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_rate_number">
+            <property name="width_request">40</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">1</property>
+          </object>
+          <packing>
+            <property name="x">450</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="sensing_to_start_button">
+            <property name="label" translatable="yes">Back to Start
+      Menu</property>
+            <property name="width_request">125</property>
+            <property name="height_request">60</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_sensing_to_start_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">675</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">100</property>
+            <property name="height_request">42</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Set Save 
+Image Rate:</property>
+          </object>
+          <packing>
+            <property name="x">494</property>
+            <property name="y">203</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_current_save_text">
+            <property name="width_request">99</property>
+            <property name="height_request">42</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Current Image
+Save Rate:</property>
+          </object>
+          <packing>
+            <property name="x">567</property>
+            <property name="y">141</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="sensing_add_hertz_button">
+            <property name="label" translatable="yes">+0.25 Hz</property>
+            <property name="width_request">97</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image_position">bottom</property>
+            <signal name="clicked" handler="on_sensing_add_hertz_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">636</property>
+            <property name="y">245</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_current_save_number">
+            <property name="width_request">30</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">1</property>
+          </object>
+          <packing>
+            <property name="x">675</property>
+            <property name="y">148</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sensing_current_save_hz">
+            <property name="width_request">28</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Hz</property>
+          </object>
+          <packing>
+            <property name="x">707</property>
+            <property name="y">146</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="sensing_saving_toggle">
+            <property name="label" translatable="yes">Begin Saving</property>
+            <property name="width_request">127</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="toggled" handler="on_sensing_saving_toggle_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">613</property>
+            <property name="y">302</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="sensing_resume_toggle">
+            <property name="label" translatable="yes">Begin Sensing</property>
+            <property name="width_request">135</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">half</property>
+            <signal name="toggled" handler="on_sensing_resume_toggle_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">610</property>
+            <property name="y">82</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="sensing_subtract_hertz_button">
+            <property name="label" translatable="yes">-0.25 Hz</property>
+            <property name="width_request">93</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_sensing_subtract_hertz_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">637</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="sensing_vacuum_toggle">
+            <property name="label" translatable="yes">Vacuum Substrate</property>
+            <property name="width_request">165</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="xalign">0.40000000596046448</property>
+            <signal name="toggled" handler="on_sensing_vacuum_toggle_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">355</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

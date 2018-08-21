@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="placement_window">
+    <property name="width_request">800</property>
+    <property name="height_request">480</property>
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="gravity">center</property>
+    <signal name="destroy" handler="on_placement_window_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="placement_to_instructions_button">
+            <property name="label" translatable="yes">Back to Instructions 
+             Menu
+</property>
+            <property name="width_request">178</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="xalign">0.55000001192092896</property>
+            <signal name="clicked" handler="on_placement_to_instructions_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">622</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="placement_title">
+            <property name="width_request">180</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">How to place the substrate:</property>
+          </object>
+          <packing>
+            <property name="x">310</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="placement_step_3">
+            <property name="width_request">400</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">3) Place the substrate onto the base of o-rings, making 
+    sure the micro-fludic chambers are detectable by 
+    the lasers.</property>
+          </object>
+          <packing>
+            <property name="x">198</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="placement_step_1">
+            <property name="width_request">400</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="yalign">0.49000000953674316</property>
+            <property name="label" translatable="yes">1) Make sure the substrate is clean and the openings of 
+    the microcluidic chamber ar open toward the cieling.</property>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">115</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="placement_step_2">
+            <property name="name">400</property>
+            <property name="width_request">400</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">2) Apply pressure on the clamping mechanism to lift the 
+    clamp off the base.</property>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="placement_step_4">
+            <property name="width_request">420</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">4) Remove pressure from the clamping mechanism to allow
+    the clamp to put pressure on the substrate.</property>
+          </object>
+          <packing>
+            <property name="x">204</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
